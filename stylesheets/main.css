@@ -1,0 +1,48 @@
+body {
+  background-color: whitesmoke;
+
+  /*
+    This padding makes it so the text
+    is centered and to the left.
+  */
+  padding: 0px 20%;
+
+  /*
+    Line height makes it so the text
+    is double spaced.
+  */
+  line-height: 2;
+}
+
+.header {
+  margin-top: 50px;
+  margin-left: 75px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+img {
+  display: inline-block;
+}
+
+figure {
+  margin-left: 115px;
+  text-align: center;
+  text-indent: 0;
+}
+
+p {
+  margin-left: 75px;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
