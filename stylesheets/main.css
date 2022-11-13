@@ -14,34 +14,82 @@ body {
   line-height: 2;
 }
 
+/*
+  Header class for any and all headers
+  for sections on the website.
+
+  Defines a consistent margin that styles
+  the text to be to the left of the center.
+*/
 .header {
   margin-top: 50px;
   margin-left: 75px;
 }
 
+/*
+  Styling for webpage headers
+*/
 h1 {
   font-size: 48px;
 }
 
+/*
+  Styling for headers of content
+  sections in the website
+*/
 h2 {
   font-size: 28px;
 }
 
-img {
-  display: inline-block;
-}
+/*
+  Styling for the content in figure
+  tags.
 
+  Aligns it so the text (figcaption)
+  will be centered
+*/
 figure {
   margin-left: 115px;
+
   text-align: center;
   text-indent: 0;
 }
 
+/*
+  Highlights the really important
+  information throughout the website
+*/
+span {
+  text-decoration: underline;
+  font-style: bold;
+}
+
+/*
+  Makes it so the images can be 
+  displayed in rows
+*/
+img {
+  display: inline-block;
+}
+
+/*
+  The actual paragraph content of
+  the website.
+
+  Inline with the headings
+*/
 p {
   margin-left: 75px;
   font-size: 18px;
 }
 
+/*
+  Aligns all the text in the footer
+  so it is centered and small
+
+  Used for things like copyright
+  and contact information.
+*/
 footer {
   text-align: center;
   font-size: 12px;
