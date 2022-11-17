@@ -1,5 +1,6 @@
 body {
-  background-color: whitesmoke;
+  background-color: #f6f6f4;
+  color: #221d1c;
 
   /*
     This padding makes it so the text
@@ -15,6 +16,39 @@ body {
 }
 
 /*
+  Styling for the nav bar from the tutorial
+  by W3 Schools.
+
+  Source: https://www.w3schools.com/css/css_navbar_horizontal.asp
+*/
+#top-nav {
+  list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f38f5a;
+  position: sticky;
+  top: 0;
+}
+
+#top-nav li {
+  float: left;
+}
+
+#top-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#top-nav a:hover {
+  background-color: #e6a639;
+}
+
+/*
   Header class for any and all headers
   for sections on the website.
 
@@ -24,6 +58,8 @@ body {
 .header {
   margin-top: 50px;
   margin-left: 75px;
+
+  color: #f38f5a;
 }
 
 /*
@@ -34,30 +70,29 @@ h1 {
 }
 
 /*
-  Styling for headers of content
-  sections in the website
+  Styling for headers of content sections 
+  in the website
 */
 h2 {
   font-size: 28px;
 }
 
 /*
-  Styling for the content in figure
-  tags.
+  Styling for the content in figure tags.
 
-  Aligns it so the text (figcaption)
-  will be centered
+  Aligns it so the text (figcaption) will be centered
 */
 figure {
   margin-left: 115px;
 
+  color: #f38f5a;
   text-align: center;
   text-indent: 0;
 }
 
 /*
-  Highlights the really important
-  information throughout the website
+  Highlights the really important information 
+  throughout the website
 */
 span {
   text-decoration: underline;
@@ -65,16 +100,20 @@ span {
 }
 
 /*
-  Makes it so the images can be 
-  displayed in rows
+  Makes it so the images can be displayed in rows
 */
 img {
   display: inline-block;
+
+  /*
+    Adds in a drop shadow underneath the image with
+    an x and y offset of 0px and a radius of 10px
+  */
+  -webkit-filter: drop-shadow(0px 0px 10px #49414d);
 }
 
 /*
-  The actual paragraph content of
-  the website.
+  The actual paragraph content of the website.
 
   Inline with the headings
 */
@@ -84,11 +123,10 @@ p {
 }
 
 /*
-  Aligns all the text in the footer
-  so it is centered and small
+  Aligns all the text in the footer so it is centered 
+  and sized smaller
 
-  Used for things like copyright
-  and contact information.
+  Used for things like copyright and contact information.
 */
 footer {
   text-align: center;
