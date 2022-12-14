@@ -1,91 +1,155 @@
-body {
-  background-color: #f6f6f4;
-  color: #221d1c;
+html {
+  font-size: 62.5%;
+}
 
-  /*
-    This padding makes it so the text
-    is centered and to the left.
-  */
-  padding: 0px 20%;
-
+/*
+  Global styling for line height
+*/
+* {
   /*
     Line height makes it so the text
     is double spaced.
+
+    140% looked really bad so I didn't use it
   */
   line-height: 2;
+}
+
+/*
+  Styling for each element in the body tags of
+  the webstite.
+
+  Sets a default background colour, font colour,
+  font style and size. Also sets a margin centering
+  all the content.
+*/
+body {
+  /*
+    Sets the background colour to an off white
+    from the colour pallette for the website.
+  */
+  background-color: #ede4e8;
+
+  /*
+    Sets the text colour to a very deep blue grey
+    colour. Meets contrast requirments with the
+    background.
+  */
+  color: #1b1a25;
+
+  /*
+    Sets the font to "Roboto," if that doesn't work
+    it uses Helvetica followed by Airal.
+    
+    If the users device does not have any of these 
+    fonts it just falls back onto any sans-serif 
+    font installed.
+  */
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-size: 1.6rem;
+
+  /*
+    Adds margin to the left and right of each
+    element centering it by giving 20% (relative
+    to the parent element) to each side 
+  */
+  margin: 0px 20%;
 }
 
 /*
   Styling for the nav bar from the tutorial
   by W3 Schools.
 
+  list-style-type is set to none getting rid of
+  the bullent points, gets rid of all padding
+  around the elements, sets the background colour
+  of the nav bar to red.
+
   Source: https://www.w3schools.com/css/css_navbar_horizontal.asp
 */
 #top-nav {
   list-style-type: none;
 
-  margin: 0;
-  padding: 0;
+  padding: 0%;
   overflow: hidden;
-  background-color: #f38f5a;
-  position: sticky;
-  top: 0;
+  background-color: #a50000;
 }
 
 #top-nav li {
   float: left;
+  margin: 5px;
 }
 
 #top-nav a {
   display: block;
-  color: white;
-  text-align: center;
   padding: 14px 16px;
+  top: 0;
+
+  color: #ede4e8;
+
+  text-align: center;
   text-decoration: none;
 }
 
-#top-nav a:hover {
-  background-color: #e6a639;
+#top-nav a:hover,
+#top-nav a:focus {
+  background-color: #ede4e8;
+  color: #a50000;
+}
+
+#top-nav a:active {
+  font-weight: bolder;
 }
 
 /*
-  Header class for any and all headers
-  for sections on the website.
+  Header class, consistently styles the headers
+  across the website.
 
-  Defines a consistent margin that styles
-  the text to be to the left of the center.
+  Adds a 50px margin to the top, a 75px margin
+  to the left and right and 0px on the bottom.
+
+  Color sets the font colour to be a contrast
+  requirment meeting red. Makes all the headings
+  red.
 */
 .header {
-  margin-top: 50px;
-  margin-left: 75px;
+  margin: 50px 75px 0px;
 
-  color: #f38f5a;
+  font-family: "Times New Roman", Times, serif;
+  color: #a50000;
 }
 
 /*
-  Styling for webpage headers
+  Styling for all h1 elements to have a font-size
+  of 6.4rem.
+
+  Four times as big as the paragraph text.
 */
 h1 {
-  font-size: 48px;
+  font-size: 6.4rem;
 }
 
 /*
-  Styling for headers of content sections 
-  in the website
+  Styling for all h2 elements to have a font-size
+  of 3.2rem.
+
+  Half the size of the h1 tags.
 */
 h2 {
-  font-size: 28px;
+  font-size: 3.2rem;
 }
 
 /*
-  Styling for the content in figure tags.
+  Styling for the figcaptions
+  
+  Sets it so the figure caption text will be the red
+  defined in the colour pallete.
 
-  Aligns it so the text (figcaption) will be centered
+  Aligns the figcaption text to the center and sets
+  the indentation on the text to 0
 */
-figure {
-  margin-left: 115px;
-
-  color: #f38f5a;
+figcaption {
+  color: #a50000;
   text-align: center;
   text-indent: 0;
 }
@@ -93,6 +157,8 @@ figure {
 /*
   Highlights the really important information 
   throughout the website
+
+  Underlines and bolds the text.
 */
 span {
   text-decoration: underline;
@@ -100,15 +166,15 @@ span {
 }
 
 /*
-  Makes it so the images can be displayed in rows
+  display: inline-block:
+    makes it so the images can be displayed in rows
+  
+  -webkit-filter: drop-shadow:
+    Adds in a drop shadow directly underneath the 
+    image (x and y offset of 0px) and a radius of 10px
 */
 img {
   display: inline-block;
-
-  /*
-    Adds in a drop shadow underneath the image with
-    an x and y offset of 0px and a radius of 10px
-  */
   -webkit-filter: drop-shadow(0px 0px 10px #49414d);
 }
 
@@ -119,7 +185,7 @@ img {
 */
 p {
   margin-left: 75px;
-  font-size: 18px;
+  font-size: 1.6rem;
 }
 
 /*
@@ -130,5 +196,5 @@ p {
 */
 footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 1.4rem;
 }

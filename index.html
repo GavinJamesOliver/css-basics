@@ -1,11 +1,26 @@
+<!--
+  Name: Gavin Oliver
+  Course: Software Development 20S
+  Teacher: Mr. Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: 11/13/2022
+
+  This is a webpage about the Treaty 2 between the Canadian Goverment
+  and the Indigenous peoples
+
+  Colour Pallete:
+    -#A50000 (Deep Red)
+    -#EDE4E8 (White)
+    -#1B1A25 (Black)
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Treaty 2</title>
     <link rel="stylesheet" href="stylesheets/main.css" />
+    <title>Treaty 2</title>
 
     <style>
       /*
@@ -15,12 +30,12 @@
         Defines the image dimensions as well as a border style
         and radius.
       */
-      #treatie-canada-map {
-        width: 510px;
+      #treaties-canada-map {
+        width: auto;
         height: 286px;
 
-        border-style: solid;
-        border-radius: 15px;
+        margin: 5% auto 2%;
+        display: block;
       }
 
       /*
@@ -29,38 +44,21 @@
         Defines the image dimensions as well as a border style and
         radius.
       */
-      #treatie-manitoba-map {
+      #treaties-manitoba-map {
         width: auto;
         height: 286px;
 
-        border-style: solid;
-        border-radius: 15px;
+        margin: 5% auto 2%;
+        display: block;
       }
     </style>
   </head>
   <body>
-    <!--
-      Name: Gavin Oliver
-      Course: Software Development 20S
-      Teacher: Mr. Hardman
-      School: Pembina Trails Early College
-      Date Last Modified: 11/13/2022
-
-      This is a webpage about the Treaty 2 between the Canadian Goverment
-      and the Indigenous peoples
-
-      Colour Pallete:
-        -#9FC45C (Green)
-        -#DBC94D (Yellow)
-        -#E6A639 (Light Orange)
-        -#FC7232 (Deep Orange)
-        -#F53042 (Desaturated Red)
-    -->
     <header>
       <nav>
         <ul id="top-nav">
           <li><a href="index.html">Home</a></li>
-          <li><a href="">Terms</a></li>
+          <li><a href="terms-and-promises.html">Terms and Promises</a></li>
         </ul>
       </nav>
 
@@ -125,10 +123,10 @@
         <div>
           <figure>
             <img
-              id="treatie-canada-map"
+              id="treaties-canada-map"
               src="images/TreatiesMap.jpeg"
               alt="A map of Canada with all the treaty areas highlighted and numbered. 
-              The Treaty 2 Area is in the bottom middle of Canada" />
+                The Treaty 2 Area is in the bottom middle of Canada" />
 
             <figcaption>
               Fig.1. Map showing the The Treaty 2 area in the scope of Canada
@@ -137,10 +135,10 @@
 
           <figure>
             <img
-              id="treatie-manitoba-map"
+              id="treaties-manitoba-map"
               src="images/ManitobaTreatyMap.jpg"
               alt="A map of Manitoba with all the treaty areas in Manitoba coloured. 
-              Treaty 2 is at the bottom left of Manitoba" />
+                Treaty 2 is at the bottom left of Manitoba" />
 
             <figcaption>
               Fig.2. Map showing the The Treaty 2 area in the scope of Manitoba
@@ -181,25 +179,25 @@
           involved in Treaty 1.
         </p>
       </section>
+    </main>
+
+    <!--
+      Footer holding the copyright and in the future maybe it will hold 
+      contact information or other such things.
+    -->
+    <footer>
+      <!--
+        A break inbetween the main and the footer content
+      -->
+      <br />
+      <hr />
 
       <!--
-        Footer holding the copyright and in the future maybe it will hold 
-        contact information or other such things.
+        Copyright information
+
+        &#169; is the entity for the copyright symbol
       -->
-      <footer>
-        <!--
-          A break inbetween the main and the footer content
-        -->
-        <br />
-        <hr />
-
-        <!--
-          Copyright information
-
-          &#169; is the entity for the copyright symbol
-        -->
-        <small>&#169; Gavin Oliver</small>
-      </footer>
-    </main>
+      <p><small>&#169; Gavin Oliver</small></p>
+    </footer>
   </body>
 </html>
