@@ -1,7 +1,3 @@
-html {
-  font-size: 62.5%;
-}
-
 /*
   Global styling for line height
 */
@@ -13,6 +9,10 @@ html {
     140% looked really bad so I didn't use it
   */
   line-height: 2;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 /*
@@ -28,7 +28,7 @@ body {
     Sets the background colour to an off white
     from the colour pallette for the website.
   */
-  background-color: #ede4e8;
+  background-color: #f3f7f4;
 
   /*
     Sets the text colour to a very deep blue grey
@@ -81,11 +81,11 @@ body {
 }
 
 #top-nav a {
-  display: block;
+  display: inline-block;
   padding: 14px 16px;
   top: 0;
 
-  color: #ede4e8;
+  color: #f3f7f4;
 
   text-align: center;
   text-decoration: none;
@@ -93,7 +93,7 @@ body {
 
 #top-nav a:hover,
 #top-nav a:focus {
-  background-color: #ede4e8;
+  background-color: #f3f7f4;
   color: #a50000;
 }
 
