@@ -7,7 +7,7 @@
 
   I chose the colour red because it is the colour of the Canadian
   flag, and the treaties are a big part of Canadian history. Red
-  also repersnets sacrifice, which is also a huge part of the
+  also repersents sacrifice, which is also a huge part of the
   treaties.
   
   I chose the colour oragnge as an accent because it repersents
@@ -22,6 +22,9 @@
   The paragraphs are sans-serif fonts to make them easier to read and
   more inviting to read for everyone since this information needs to
   be accesable for everyone.
+
+  The combination of both styles of fonts makes the website look both
+  trustworth and established, as well as inviting.
 */
 
 /*
@@ -38,6 +41,9 @@
   line-height: 2;
 }
 
+/*
+  Sets the font size for everything
+*/
 html {
   font-size: 62.5%;
 }
@@ -109,7 +115,7 @@ body {
   text-decoration: none;
 
   display: inline-block;
-  padding: 14px 16px;
+  padding: 1.5% 1.5%;
 }
 
 /*
@@ -142,10 +148,18 @@ body {
   meeting red, giving a consistent heading colour.
 */
 .header {
-  margin: 50px 75px 0px;
+  margin: 50px 0px 0px;
 
   font-family: "Times New Roman", Times, serif;
   color: #a50000;
+}
+
+/*
+  Adds the margin to the left to give it a paragraph like
+  indent.
+*/
+section {
+  margin-left: 50px;
 }
 
 /*
@@ -164,6 +178,13 @@ h1 {
 */
 h2 {
   font-size: 3.2rem;
+}
+
+/*
+  Adds space to the top of the figure
+*/
+figure {
+  margin: 5% 0%;
 }
 
 /*
@@ -196,19 +217,42 @@ span {
   -webkit-filter: drop-shadow:
     Adds in a drop shadow directly underneath the 
     image (x and y offset of 0px) and a radius of 10px
+
+  Tranitions to the diffrent hover properties in 0.1s
+    - Changes in scale aswell as outline
 */
 img {
-  -webkit-filter: drop-shadow(0px 0px 10px #49414d);
+  /* 
+    Remember Mr. Hardman, the change is the outline. You gave permission that 
+    this transition is one that we did not cover in class.
+  */
+  /* autoprefixer: off */
+  -webkit-transition: outline-width 0.1s, -webkit-transform 0.1s;
+  transition: outline-width 0.1s, -webkit-transform 0.1s;
+  -o-transition: outline-width 0.1s, -o-transform 0.1s;
+  -moz-transition: transform 0.1s, outline-width 0.1s, -moz-transform 0.1s;
+  transition: transform 0.1s, outline-width 0.1s;
+  transition: transform 0.1s, outline-width 0.1s, -webkit-transform 0.1s,
+    -moz-transform 0.1s, -o-transform 0.1s;
+
+  -webkit-filter: drop-shadow(0 0 10px #49414d);
+
+  outline: #a50000 solid 0px;
 }
 
 /*
-  The actual paragraph content of the website.
-
-  Styles it with the same margin as the heading so it is inline
-  with it.
+  Scales the image up when it is hovered and adds an outline
+  to draw the users attention, seperating it from the background.
 */
-p {
-  margin-left: 75px;
+img:hover,
+img:focus {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+
+  outline: #a50000 solid 5px;
 }
 
 /*
